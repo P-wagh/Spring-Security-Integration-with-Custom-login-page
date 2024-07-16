@@ -51,8 +51,8 @@ public class SecurityConfig {
                     )
 
                     .formLogin(form -> form
-                    // .loginPage("/login")
-                    // .defaultSuccessUrl("/user/userhome", true)
+                    .loginPage("/login")
+                    .defaultSuccessUrl("/user/userhome", true)
                     .permitAll())
 
                         .build();
